@@ -3403,7 +3403,9 @@
 				#banner .content .image img {
 					border-radius: 100%;
 					display: block;
-					width: 100%;
+					width: 107%;
+					margin-top: -18px;
+					margin-left: -8px;
 				}
 
 	body.is-touch #banner {
