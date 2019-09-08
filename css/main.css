@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+/*nav bar*/
+.top.menu{
+    height: 13vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 1.4em;
+}
+.ui.menu .item{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    position: static;
+}
+.ui.menu .menu .item:hover{
+    color: #B32925;
+}
+.ui.menu .menu .active{
+    color: #B32925;
+}
+.ui.menu .header{
+    letter-spacing: 5px;
+}
+.ui.vertical.menu .header.item{
+    margin-left: 10px;
+}
+.ui.vertical.menu .item{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 1.4em;
+    padding-left: 20px;
+}
+@media only screen and (min-width: 600px){
+    [class*="mobile only"]:not(.computer),
+    [class*="tablet only"]:not(.computer),
+    [class*="computer hidden"],
+    [class*="large screen only"]:not(.computer),
+    [class*="widescreen only"]:not(.computer),
+    [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+}
+body.pushable > .pusher{
+    background: none;
+}
+.pushable > .pusher{
+    background: none;
+}
+/*cover pictures*/
+.cover{
+    min-height: 110vh;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: -10vh;
+    left: 0;
+    z-index: 0;
+}
+div.cover{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    margin-top: 20vh;
+}
+.name{
+    position: absolute;
+    overflow-wrap: break-word;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: white;
+    letter-spacing: 10px;
+    min-width: 100vw;
+    text-align: center;
+}
+.description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    font-size: 1em;
+    letter-spacing: 6px;
+}
+
+/*body*/
+p{
+    font-family: "source sans pro";
+    font-size: calc(12px + .5vw);
+}
+.about{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin-top: 100vh;
+    z-index: 1;
+    background-color: white;
+    padding-bottom: 20vh;
+}
+.past{
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+.contents{
+    width: 35vw;
+    position: absolute;
+    top: 10vh;
+    right: 15vw;
+}
+.title{
+    text-align: center;
+    font-size: calc(12px + 1.5vw);
+    padding-top: 5vh;
+}
+.title.underline{
+    text-decoration: underline red;
+    margin-bottom: 5vh;
+}
+.aboutTitle{
+    font-size: calc(12px + 1.5vw);
+}
+.contents ul li{
+    margin-top: 0.5em;
+}
+#aboutPic{
+    width: 30vw;
+    position: relative;
+    top: 10vh;
+    left: 15vw;
+}
+#rightColumnPic{
+    width: 30vw;
+    position: relative;
+    left: 3vw;
+}
+#leftColumnPic{
+    width: 30vw;
+    position: relative;
+}
+.ui.special.cards{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2vh;
+}
+.three{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 1vh;
+}
+.special.cards .card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    width: 22vw;
+}
+.ui.inverted.button a{
+    color: white;
+}
+.ui.inverted.button a:hover{
+    color: black;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: gray; 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: gray; 
+}
+::-webkit-scrollbar {
+	width: 5px;
+}
+.pad{
+    margin-bottom: -20vh;
+}
+.padd{
+    margin-left: 7.5vw;
+}
+.project{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin-top: 100vh;
+    z-index: 1;
+    background-color: white;
+}
+#full{
+    padding-left: 5vw;
+    width: 60vw;
+}
+#sponsor{
+    display:flex;
+    justify-content:center;
+}
+#sidebar{
+    z-index: 100;
+}
+
+/*footer*/
+footer{
+    position: absolute;
+    bottom: 0px;
+    margin-top: 7vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-top: 10px;
+    padding-left: 3vw;
+    position: relative;
+    border-top: 2px solid silver;
+    z-index: 1;
+    height: 20vh;
+}
+.foot{
+    padding-top: 5vh;
+    display:flex;
+    justify-content:center;
+}
