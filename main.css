@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+p{
+    font-family: "source sans pro";
+    font-size: calc(12px + .5vw);
+}
+h1{
+    text-decoration: underline red;
+}
+.nav-item.nav-link{
+    font-size: 1.25em;
+    margin-right: 1.25em;
+}
+.active{
+    color: #B32925;
+}
+.coverImage{
+    position: fixed;
+    top: -4vw;
+    left: 0;
+    filter: brightness(50%);
+    z-index: -100;
+}
+.topOff{
+    width: 99.74vw;
+    height: auto;
+    background-color: white;
+    z-index: 99;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.centerText{
+    padding-top: 23%;
+    padding-bottom: 23%;
+}
+.centerText .header{
+    font-size: 5vw;
+    letter-spacing: 0.3vw;
+    font-weight: bold;
+}
+.centerText .subheader{
+    letter-spacing: 0.3vw;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.foot{
+    margin-top: 10vh;
+    border-top: 2px solid silver;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    z-index: 1000
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: gray; 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: gray; 
+}
+::-webkit-scrollbar {
+	width: 5px;
+}

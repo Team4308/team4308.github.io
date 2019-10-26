@@ -1,142 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
-    <link rel="stylesheet" href="assets/resources/semantic.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/png" href="./assets/images/Logo.png" />
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-        
-    <script src="assets/resources/semantic.js"></script>
-    <script src="assets/js/main.js"></script>
-    <title>Sponsorships - Absolute Robotics</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Absolute Robotics</title>
 </head>
+
 <body>
-    <div id="sidebar" class="ui sidebar vertical menu">
-        <a class="header item" href="index.html">
-            <img src="assets/images/Header.png" />
-        </a>
-        <a class="item" href="about.html">About Us</a>
-        <a class="item active" href="sponsorships.html">Sponsorships</a>
-        <a class="item" href="pastSeasons.html">Past Seasons</a>
-        <a class="item" href="resources.html">Resources</a>
-    </div>
-    <div class="pusher">
-        <div class="ui menu top fixed">
-            <a style="width: 30%" class="header item" href="index.html">
-                <img style="width: 30%" src="assets/images/Header.png" />
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/Header.png" style="max-width: 6vw;" alt="Logo">
             </a>
-            <div class="right menu">
-                <a class="item" href="about.html">About Us</a>
-                <a class="item active" href="sponsorships.html">Sponsorships</a>
-                <a class="item" href="pastSeasons.html">Past Seasons</a>
-                <a class="item" href="resources.html">Resources</a>
-            </div>
-        </div>
-        <div class="ui visible fixed main top menu screen tablet mobile only">
-            <a class="icon item sidebar-toggle" id="sidebar-toggle">
-                <i class="sidebar icon"></i>
-            </a>
-        </div>
-    </div>
-    <div class="home">
-        <img class="cover" src="assets/images/image0.jpg"/>
-        <div class="cover"></div>
-        <h1 class="name">SPONSORSHIPS</h1>
-        <h3 class="name description">GET INVOLVED!</h3>
-    </div>
-    <div class="about pad">
-        <div class="three">
-            <h1 class="aboutTitle title underline">WHY SPONSOR?</h1>
-            <p>Absolute Robotics has wide reach in both its local and global community. At each regional competition alone, Absolute Robotics interacts with several supporting business and organizations, dozens of local robotics teams, and hundreds of fellow high school students, mentors, and industry professionals.</p>
-            <div class="ui equal width grid">
-                <div class="column">
-                    <h1 class="aboutTitle">Our Vision <i class="eye icon"></i></h1>
-                    <p>Absolute Robotics strives to promote STEM within the community by creating a positive learning environment where students can pursue their passion for STEM and develop their skills in engineering, programming, design, and business.</p>
-                </div>
-                <div class="column">
-                    <img id="rightColumnPic" src="assets/images/Sponsorship/image1.jpg"/>
-                </div>
-            </div>
-            <div class="ui equal width grid">
-                <div class="column">
-                    <img id="leftColumnPic" src="assets/images/Sponsorship/image3.jpg"/>
-                </div>
-                <div class="column">
-                    <h1 class="aboutTitle">Our Goal <i class="lightbulb outline icon"></i></h1>
-                    <p>Absolute Robotics wants to continue being able to provide the opportunity for our community to experience what it is like to be a part of a world-class robotics team. Through lessons from senior members and mentors, engagement in the design and building of complex mechatronic systems, and participation in exciting competitions, we want to give them skills and experiences that they wouldn’t get anywhere else.</p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="about.html">About Us</a>
+                    <a class="nav-item nav-link active" href="sponsorships.html">Sponsorships</a>
+                    <a class="nav-item nav-link" href="pastSeasons.html">Past Seasons</a>
+                    <a class="nav-item nav-link" href="resources.html">Resources</a>
                 </div>
             </div>
         </div>
+    </nav>
+    <div class="pageCover">
+        <img src="assets/images/image0.jpg" class="img-fluid coverImage" alt="Home image">
+        <div class="centerText">
+            <p class="text-center header text-white">SPONSORSHIPS</p>
+            <p class="text-center subheader text-white">GET INVOLVED!</p>
+        </div>
     </div>
-    <div class="past">
-        <h1 class="title underline">HOW TO SPONSOR</h1>
-        <div class="three">
-            <p>There are countless ways that you can give us a hand! The operation of an FRC robotics team is a costly endeavor, so financial sponsorships would go a long way towards helping us achieving our goals. Non-monetary sponsorships would are also greatly appreciated as well! This might include supplying raw materials like sheet metal or wood, providing key robot parts like electronics or pneumatics, machining or printing services, or catering for an event.</p>
+
+    <div class="topOff">
+        <div class="container">
+            <h1 class="text-center">WHY SPONSOR?</h1>
+            <p></p>
+            <p>Absolute Robotics has wide reach in both its local and global community. At each regional competition
+                alone, Absolute Robotics interacts with several supporting business and organizations, dozens of local
+                robotics teams, and hundreds of fellow high school students, mentors, and industry professionals.</p>
             <br>
-        </div>
-        <a id="sponsor" href="./assets/resources/Absolute-Robotics-Sponsorship-Package_2019.pdf">
-            <button class="ui negative basic button">Check out our sponsorship package!</button>
-        </a> 
-        <h1 class="title underline">WHERE  DO  INVESTMENTS  GO</h1>
-        <div class="three">
-            <div class="ui equal width grid">
-                <div class="column">
-                    <p>Any resources that you help provide will be directly used to help support the various activities that we do! Our funds will be spent on many needs, including the ones listed on the right. Additionally, any extra money raised will go towards helping decreasing member registration costs, making what we do more accessible to everyone and reducing the individual financial burdens on members.</p>
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Our Vision <i class="eye icon"></i></h2>
+                    <p>Absolute Robotics strives to promote STEM within the community by creating a positive learning
+                        environment where students can pursue their passion for STEM and develop their skills in
+                        engineering, programming, design, and business.</p>
                 </div>
-                <div class="column">
-                    <div class="padd">
-                        <div class="ui massive aligned animated list">
-                            <div class="item">
-                                <i class="wrench icon"></i>
-                                <div class="content">
-                                    <p>Competition Registration</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <i class="wrench icon"></i>
-                                <div class="content">
-                                    <p>Robot Parts and Machining</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <i class="wrench icon"></i>
-                                <div class="content">
-                                    <p>Tools and Equipment</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <i class="wrench icon"></i>
-                                <div class="content">
-                                    <p>Team Clothing and Branding</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm">
+                    <img src="assets/images/Sponsorship/image1.jpg" class="center-block" style="max-width: 90%" alt="">
                 </div>
             </div>
-        </div>
-        <h1 class="title underline">SPSONSORSHIP TIERS</h1>
-        <div class="three">
-            <p>In exchange for your sponsorship (both monetary and non-monetary), we are offering a variety of benefits based on the following tier levels:</p>
-            <img id="full" src="assets/images/Sponsors.png"/>
-        </div>
-        <footer>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="assets/images/Sponsorship/image3.jpg" class="center-block" style="max-width: 90%" alt="">
+                </div>
+                <div class="col-sm">
+                    <h2>Our Goal <i class="lightbulb outline icon"></i></h2>
+                    <p>Absolute Robotics wants to continue being able to provide the opportunity for our community to
+                        experience what it is like to be a part of a world-class robotics team. Through lessons from
+                        senior members and mentors, engagement in the design and building of complex mechatronic
+                        systems, and participation in exciting competitions, we want to give them skills and experiences
+                        that they wouldn’t get anywhere else.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h1 class="text-center">HOW TO SPONSOR</h1>
+            <p></p>
+            <p>There are countless ways that you can give us a hand! The operation of an FRC robotics team is a costly
+                endeavor, so financial sponsorships would go a long way towards helping us achieving our goals.
+                Non-monetary sponsorships would are also greatly appreciated as well! This might include supplying raw
+                materials like sheet metal or wood, providing key robot parts like electronics or pneumatics, machining
+                or printing services, or catering for an event.</p>
+            <div class="text-center">
+                <a href="assets/resources/Absolute-Robotics-Sponsorship-Package_2019.pdf">
+                    <button type="button" class="btn btn-outline-danger">Check out our sponsorship package!</button>
+                </a>
+            </div>
+            <br>
+            <br>
+            <h1 class="text-center">WHERE DO INVESTMENTS GO</h1>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <p>Any resources that you help provide will be directly used to help support the various activities
+                        that we do! Our funds will be spent on many needs, including the ones listed on the right.
+                        Additionally, any extra money raised will go towards helping decreasing member registration
+                        costs, making what we do more accessible to everyone and reducing the individual financial
+                        burdens on members.</p>
+                </div>
+                <div class="col-sm">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="wrench icon"></i> Competition Registration</li>
+                        <li class="list-group-item"><i class="wrench icon"></i> Robot Parts and Machining</li>
+                        <li class="list-group-item"><i class="wrench icon"></i> Tools and Equipment</li>
+                        <li class="list-group-item"><i class="wrench icon"></i> Team Clothing and Branding</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <h1 class="text-center">SPONSORSHIP TIERS</h1>
+            <p></p>
+            <p>In exchange for your sponsorship (both monetary and non-monetary), we are offering a variety of benefits
+                based on the following tier levels:</p>
+            <img src="assets/images/Sponsors.png" class="center-block" style="max-width: 75%" alt="">
             <div class="foot">
                 <br>
-                <a href="https://www.facebook.com/frc4308" style="color: #3b5998"><i class="facebook big icon"></i></a> 
+                <a href="https://www.facebook.com/frc4308" style="color: #3b5998"><i class="facebook big icon"></i></a>
                 <a href="https://twitter.com/frcteam4308/" style="color: #1DA1F2"><i class="twitter big icon"></i></a>
-                <a href="https://www.youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw" style="color: #FF0000"><i class="youtube big icon"></i></a>
-                <a href="https://www.instagram.com/frc4308/" style="color: #c13584"><i class="instagram big icon"></i></a>
-                <a href="mailto:the.woodlands.robotics@gmail.com" style="color: black"><i class="envelope big icon"></i></a>
+                <a href="https://www.youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw" style="color: #FF0000"><i
+                        class="youtube big icon"></i></a>
+                <a href="https://www.instagram.com/frc4308/" style="color: #c13584"><i
+                        class="instagram big icon"></i></a>
+                <a href="mailto:the.woodlands.robotics@gmail.com" style="color: black"><i
+                        class="envelope big icon"></i></a>
             </div>
-        </footer>
+        </div>
     </div>
 </body>
+
 </html>

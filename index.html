@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
-    <link rel="stylesheet" href="assets/resources/semantic.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/png" href="./assets/images/Logo.png" />
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-        
-    <script src="assets/resources/semantic.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
     <title>Absolute Robotics</title>
 </head>
+
 <body>
-    <div id="sidebar" class="ui sidebar vertical menu">
-        <a class="header item" href="index.html">
-            <img src="assets/images/Header.png" />
-        </a>
-        <a class="item" href="about.html">About Us</a>
-        <a class="item" href="sponsorships.html">Sponsorships</a>
-        <a class="item" href="pastSeasons.html">Past Seasons</a>
-        <a class="item" href="resources.html">Resources</a>
-    </div>
-    <div class="pusher">
-        <div class="ui menu top fixed">
-            <a style="min-width: 30%" class="header item" href="index.html">
-                <img style="min-width: 30%" src="assets/images/Header.png" />
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/Header.png" style="max-width: 6vw;" alt="Logo">
             </a>
-            <div class="right menu">
-                <a class="item" href="about.html">About Us</a>
-                <a class="item" href="sponsorships.html">Sponsorships</a>
-                <a class="item" href="pastSeasons.html">Past Seasons</a>
-                <a class="item" href="resources.html">Resources</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="about.html">About Us</a>
+                    <a class="nav-item nav-link" href="sponsorships.html">Sponsorships</a>
+                    <a class="nav-item nav-link" href="pastSeasons.html">Past Seasons</a>
+                    <a class="nav-item nav-link" href="resources.html">Resources</a>
+                </div>
             </div>
         </div>
-        <div class="ui visible fixed main top menu screen tablet mobile only">
-            <a class="icon item sidebar-toggle" id="sidebar-toggle">
-                <i class="sidebar icon"></i>
-            </a>
+    </nav>
+    <div class="pageCover">
+        <img src="assets/images/homeCover.png" class="img-fluid coverImage" alt="Home image">
+        <div class="centerText">
+            <p class="text-center header text-white">ABSOLUTE ROBOTICS</p>
+            <p class="text-center subheader text-white">FRC TEAM 4308</p>
         </div>
     </div>
-    <div class="home">
-        <img class="cover" src="assets/images/homeCover.png"/>
-        <div class="cover"></div>
-        <h1 class="name">ABSOLUTE ROBOTICS</h1>
-        <h3 class="name description">FRC TEAM 4308</h3>
-    </div>
-    <div class="about">
-        <img id="aboutPic" src="assets/images/Logo.png"/>
-        <div class="contents">
-            <h1 class="aboutTitle">OUR TEAM</h1>
-            <p>Absolute Robotics is a robotics team based at the Woodlands Secondary School in Mississauga, Ontario. We are currently made up of over 70 students, teachers, and mentors who are passionate about entrepreneurship, business, engineering, and technology!</p>
 
-            <p>Our members gain invaluable hands-on experiences in the world of engineering, problem solving and business. By competing in the FIRST Robotics Competition (FRC), they develop key skills and competences that are crucial in our constantly evolving technological society.</p>
-        </div>
-    </div>
-    <div class="past">
-        <h1 class="title underline">TOP SPONSORS</h1>
-        <div class="three">
-            <p>A special thanks to...</p>
-        </div>
-        <footer>
+    <div class="topOff">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="assets/images/Logo.png" class="center-block" style="max-width: 80%" alt="">
+                </div>
+                <div class="col-sm">
+                    <p></p>
+                    <h1>OUR TEAM</h1>
+                    <br>
+                    <p>Absolute Robotics is a robotics team based at the Woodlands Secondary School in Mississauga,
+                        Ontario. We are currently made up of over 70 students, teachers, and mentors who are passionate
+                        about entrepreneurship, business, engineering, and technology!</p>
+
+                    <p>Our members gain invaluable hands-on experiences in the world of engineering, problem solving and
+                        business. By competing in the FIRST Robotics Competition (FRC), they develop key skills and
+                        competences that are crucial in our constantly evolving technological society.</p>
+                </div>
+            </div>
             <div class="foot">
                 <br>
-                <a href="https://www.facebook.com/frc4308" style="color: #3b5998"><i class="facebook big icon"></i></a> 
+                <a href="https://www.facebook.com/frc4308" style="color: #3b5998"><i class="facebook big icon"></i></a>
                 <a href="https://twitter.com/frcteam4308/" style="color: #1DA1F2"><i class="twitter big icon"></i></a>
-                <a href="https://www.youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw" style="color: #FF0000"><i class="youtube big icon"></i></a>
-                <a href="https://www.instagram.com/frc4308/" style="color: #c13584"><i class="instagram big icon"></i></a>
-                <a href="mailto:the.woodlands.robotics@gmail.com" style="color: black"><i class="envelope big icon"></i></a>
+                <a href="https://www.youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw" style="color: #FF0000"><i
+                        class="youtube big icon"></i></a>
+                <a href="https://www.instagram.com/frc4308/" style="color: #c13584"><i
+                        class="instagram big icon"></i></a>
+                <a href="mailto:the.woodlands.robotics@gmail.com" style="color: black"><i
+                        class="envelope big icon"></i></a>
             </div>
-        </footer>
+        </div>
     </div>
 </body>
+
 </html>
