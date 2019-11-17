@@ -4,7 +4,9 @@
     src: url('../fonts/glyphicons-halflings-regular.eot');
     src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
-
+body{
+    overflow-x:hidden;
+}
 p{
     font-family: "source sans pro";
     font-size: calc(12px + .5vw);
@@ -72,4 +74,8 @@ h1{
 }
 ::-webkit-scrollbar {
 	width: 5px;
+}
+
+.big.icon{
+    text-decoration: none;
 }
