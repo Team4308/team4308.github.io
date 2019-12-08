@@ -79,3 +79,24 @@ h1{
 .big.icon{
     text-decoration: none;
 }
+
+.hover{
+    opacity: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 8.5%;
+    width: 83%;
+    height: 100%;
+}
+
+.hover div{
+    padding: 5px;
+    font-size: 14.5px;
+}
+
+.hover:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}

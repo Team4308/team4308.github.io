@@ -26,17 +26,42 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="about.html">About Us</a>
-                    <a class="nav-item nav-link active" href="sponsorships.html">Sponsorships</a>
-                    <a class="nav-item nav-link" href="pastSeasons.html">Past Seasons</a>
-                    <a class="nav-item nav-link" href="sponsors.html">Sponsors</a>
-                    <a class="nav-item nav-link" href="resources.html">Resources</a>
+                    <li class="nav-item nav-link">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a class="nav-link" href="pastSeasons.html">Past Seasons</a>
+                    </li>
+                    <li class="nav-item nav-link dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sponsors
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="sponsorships.html">Sponsor Us</a>
+                            <a class="dropdown-item" href="sponsors.html">Our Sponsors</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="resources/General/general.html">General</a>
+                            <a class="dropdown-item" href="resources/Safety/safety.html">Safety</a>
+                            <a class="dropdown-item" href="resources/Mechanical/mechanical.html">Mechanical</a>
+                            <a class="dropdown-item" href="resources/Electrical/electrical.html">Electrical</a>
+                            <a class="dropdown-item" href="resources/Design/design.html">Design</a>
+                            <a class="dropdown-item" href="resources/Programming/programming.html">Programming</a>
+                        </div>
+                    </li>
                 </div>
             </div>
         </div>
     </nav>
     <div class="pageCover">
-        <img src="assets/images/image0.jpg" class="img-fluid coverImage" alt="Home image">
+        <img src="assets/images/image0.jpg" style="min-width: 100%" class="img-fluid coverImage" alt="Home image">
         <div class="centerText">
             <p class="text-center header text-white">SPONSORSHIPS</p>
             <p class="text-center subheader text-white">GET INVOLVED!</p>
