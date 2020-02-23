@@ -18,6 +18,9 @@ h1{
     font-size: 1.25em;
     margin-right: 1.25em;
 }
+.navbar-dark .navbar-nav .nav-link{
+    color: rgba(255,255,255,.95);
+}
 .active{
     color: #B32925;
 }
@@ -25,7 +28,7 @@ h1{
     position: fixed;
     top: -4vw;
     left: 0;
-    filter: brightness(50%);
+    filter: brightness(40%);
     z-index: -100;
 }
 .topOff{
