@@ -28,7 +28,7 @@ h1{
     position: fixed;
     top: -4vw;
     left: 0;
-    filter: brightness(40%);
+    filter: brightness(50%);
     z-index: -100;
 }
 .topOff{
