@@ -29,9 +29,17 @@ h1{
 .active{
     color: #B32925;
 }
-.coverImage{
-    height:100vh; 
+.coverImages{
     width: 100vw;
+    max-height: 100vh;
+}
+.coverImage{
+  position: fixed;
+  left: 0;
+  filter: brightness(50%);
+  z-index: -100;
+  max-height:100vh; 
+  width: 100vw;
 }
 .topOff{
     width: 99.74vw;
@@ -41,12 +49,24 @@ h1{
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
+.centerText{
+  padding-top: 23%;
+  padding-bottom: 23%;
+}
 .centerText .header{
+  font-size: 5vw;
+  letter-spacing: 0.3vw;
+  font-weight: bold;
+}
+.centerText .subheader{
+  letter-spacing: 0.3vw;
+}
+.centerTexts .header{
     font-size: 5vw;
     letter-spacing: 0.3vw;
     font-weight: bold;
 }
-.centerText .subheader{
+.centerTexts .subheader{
     letter-spacing: 0.3vw;
 }
 .center-block {
