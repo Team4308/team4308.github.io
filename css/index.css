@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
 :root {
     --primary: #b32925;
+    --font-family: "Oxanium", sans-serif;
 }
 
 /* Navbar */
@@ -27,4 +30,19 @@ nav {
 }
 .hero h2 {
     font-size: 64px;
+}
+
+/* Extensions of PicoCSS */
+.grid {
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+/* Utilities */
+.zbm {
+    margin-bottom: 0;
 }
