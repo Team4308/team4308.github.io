@@ -14,8 +14,32 @@ nav {
 }
 
 /* Landing page hero */
+.lp-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url("/assets/images/lp_hero.jpg");
+}
+
+/* About page hero */
+.a-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url("/assets/images/a_hero.jpg");
+}
+
+/* Past seasons page hero */
+.ps-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url("/assets/images/ps_hero.jpg");
+}
+
+/* Sponsor us page hero */
+.su-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url("/assets/images/su_hero.jpg");
+}
+
+/* Sponsors page hero */
+.s-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url("/assets/images/s_hero.jpg");
+}
+
+/* Generic hero */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("/assets/images/hero.jpg");
     background-position: center;
     background-size: cover;
     height: 40rem;
