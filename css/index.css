@@ -1,0 +1,30 @@
+:root {
+    --primary: #b32925;
+}
+
+/* Navbar */
+nav {
+    background-color: #b32925;
+}
+.nav-element {
+    padding: 0 1rem;
+}
+
+/* Landing page hero */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("/assets/images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 96px;
+}
+.hero h2 {
+    font-size: 64px;
+}

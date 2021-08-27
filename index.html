@@ -1,187 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Absolute Robotics</title>
+    
+    <!-- AlpineJS -->
+    <script defer src="/js/alpine.min.js"></script>
+
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="/css/pico.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/index.css">
 </head>
-
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #B32925;">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/Header.png" style="max-width: 6vw;" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <li class="nav-item nav-link">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item nav-link">
-                        <a class="nav-link" href="pastSeasons.html">Past Seasons</a>
-                    </li>
-                    <li class="nav-item nav-link dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sponsors
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="sponsorships.html">Sponsor Us</a>
-                            <a class="dropdown-item" href="sponsors.html">Our Sponsors</a>
-                        </div>
-                    </li>
-                    <li class="nav-item nav-link dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Resources
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="resources/General/general.html">General</a>
-                            <a class="dropdown-item" href="resources/Safety/safety.html">Safety</a>
-                            <a class="dropdown-item" href="resources/Mechanical/mechanical.html">Mechanical</a>
-                            <a class="dropdown-item" href="resources/Electrical/electrical.html">Electrical</a>
-                            <a class="dropdown-item" href="resources/Design/design.html">Design</a>
-                            <a class="dropdown-item" href="resources/Programming/programming.html">Programming</a>
-                        </div>
-                    </li>
-                </div>
-            </div>
-        </div>
+    <nav class="container-fluid">
+        <ul>
+            <li>
+                <a href="/">
+                    <img src="/assets/images/navbar_icon.png" style="max-width: 6vw;">
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="nav-element">
+                <a href="/about.html" class="contrast" role="button">About Us</a>
+            </li>
+            <li class="nav-element">
+                <a href="/past_seasons.html" class="contrast" role="button">Past Seasons</a>
+            </li>
+            <li class="nav-element">
+                <a href="/sponsor_us.html" class="contrast" role="button">Sponsor Us</a>
+            </li>
+            <li class="nav-element">
+                <a href="/sponsors.html" class="contrast" role="button">Our Sponsors</a>
+            </li>
+        </ul>
     </nav>
-    <div class="pageCover">
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <img src="assets/images/homeCover.jpg" class="coverImages" style="filter: brightness(50%);">
-              <div class="text centerTexts">
-                <p class="text-center header text-white">ABSOLUTE ROBOTICS</p>
-                <p class="text-center subheader text-white">FRC TEAM 4308</p>
-              </div>
-            </div>
-          
-            <!-- Next and previous buttons 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
-          </div>
-          <br>
-          
+    <div class="hero">
+        <header class="container">
+            <hgroup>
+                <h1>ABSOLUTE ROBOTICS</h1>
+                <h2>FRC TEAM 4308</h2>
+            </hgroup>
+        </header>
     </div>
 
-    <div class="topOff">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <img src="assets/images/Logo.jpg" class="center-block" style="max-width: 80%" alt="">
-                </div>
-                <div class="col-sm">
-                    <p></p>
-                    <h1>OUR TEAM</h1>
-                    <br>
-                    <p>Absolute Robotics is a robotics team based at the Woodlands Secondary School in Mississauga,
-                        Ontario. We are currently made up of over 70 students, teachers, and mentors who are passionate
-                        about entrepreneurship, business, engineering, and technology!</p>
-
-                    <p>Our members gain invaluable hands-on experiences in the world of engineering, problem solving and
-                        business. By competing in the FIRST Robotics Competition (FRC), they develop key skills and
-                        competences that are crucial in our constantly evolving technological society.</p>
-                </div>
-            </div>
-            <br>
-            <br>
-            <h1 class="text-center">OUR MISSIONS</h1>
-            <br>
-            <div class="row">
-                <div class="col-sm">
-                    <h2>Build <i class="wrench icon"></i></h2>
-                    <p>Work together with students and teachers to manufacture industrial grade robots using simple
-                        tools and materials.</p>
-                </div>
-                <div class="col-sm">
-                    <h2>Innovate <i class="lightbulb outline icon"></i></h2>
-                    <p>Create new solutions to challenging problems by using a reiterative design philosophy to develop
-                        the best solution.</p>
-                </div>
-                <div class="col-sm">
-                    <h2>Teach & Inspire <i class="handshake outline icon"></i></h2>
-                    <p>Student and mentors alike teach each other the ways to build, innovate, and finance their team.
-                        Inspire students to become the best they can be at any field they wish to be in.</p>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-sm" style="margin-left:5%">
-                    <p></p>
-                    <h1>WHAT WE DO</h1>
-                    <p></p>
-                    <p>
-                        Absolute Robotics competes in the annual FIRST Robotics Competition (FRC), an international
-                        competition where teams design and build an industrial-sized robot within 6 weeks to participate
-                        in an engineering challenge. Teams compete with robots in their local and international
-                        community at competitions around the world, predominantly in Ontario and the US.</p>
-                </div>
-                <div class="col-sm">
-                    <img src="assets/images/image8.jpg" class="center-block" style="max-width: 80%" alt="">
-                </div>
-            </div>
-
-            <br>
-            <div class="foot">
-                <br>
-                <a href="https://www.facebook.com/frc4308" style="color: #3b5998"><i class="facebook big icon"></i></a>
-                <a href="https://twitter.com/frcteam4308/" style="color: #1DA1F2"><i class="twitter big icon"></i></a>
-                <a href="https://www.youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw" style="color: #FF0000"><i
-                        class="youtube big icon"></i></a>
-                <a href="https://www.instagram.com/frc4308/" style="color: #c13584"><i
-                        class="instagram big icon"></i></a>
-                <a href="mailto:the.woodlands.robotics@gmail.com" style="color: black"><i
-                        class="envelope big icon"></i></a>
-            </div>
-        </div>
-    </div>
-
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
+    <main class="container">
+    </main>
 </body>
-
 </html>
