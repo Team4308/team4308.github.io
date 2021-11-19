@@ -24,26 +24,56 @@
   .nav-button {
     @apply visible p-2 w-auto text-center text-current bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
   }
-  .section {
-    @apply flex flex-col justify-center items-center px-8 w-full text-center md:px-32;
+  .main {
+    @apply flex flex-col gap-32 justify-center items-center pb-16;
   }
-  .section-header {
+  .hero {
+    @apply gap-4 h-screen bg-center bg-cover section;
+  }
+  .section {
+    @apply flex flex-col gap-16 justify-center items-center px-8 w-full text-center md:px-32;
+  }
+  .hero-title {
     @apply text-6xl font-black text-red-500 md:text-8xl;
   }
+  .hero-subtitle {
+    @apply text-4xl font-extrabold text-red-400;
+  }
+  .section-title {
+    @apply text-4xl font-black text-red-400 md:text-6xl;
+  }
   .mission {
-    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg md:w-96 md:h-48;
+    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg md:w-96;
+  }
+  .mission-title {
+    @apply text-2xl font-bold md:text-4xl;
   }
   .image-paragraph {
-    @apply flex flex-col flex-wrap gap-16 justify-center items-center text-left md:flex-row;
+    @apply flex flex-col-reverse flex-wrap-reverse gap-8 justify-center items-center text-left md:flex-row;
+  }
+  .image-paragraph-reverse {
+    @apply flex flex-col flex-wrap gap-8 justify-center items-center text-left md:flex-row;
   }
   .paragraph {
-    @apply p-8 bg-gray-800 rounded-lg md:w-128;
+    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg md:w-128;
+  }
+  .subparagraph {
+    @apply flex flex-col gap-2;
+  }
+  .paragraph-title {
+    @apply text-2xl font-bold md:text-4xl;
+  }
+  .image-beside-paragraph {
+    @apply self-auto rounded-lg md:w-128;
   }
   .footer {
     @apply flex flex-col gap-4 justify-center items-center p-4 bg-red-700 rounded-t-lg;
   }
   .social {
     @apply p-2 bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
+  }
+  .lead-image {
+    @apply w-32 md:w-56;
   }
 }
 
