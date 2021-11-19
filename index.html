@@ -4,20 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles/tailwind.css" />
     <script
       src="https://kit.fontawesome.com/e3867b32f0.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles/tailwind.css" />
 
     <title>Team 4308 - Absolute Robotics</title>
   </head>
   <body class="w-screen font-sans text-white bg-gray-900">
     <nav class="mobile-nav-bar md:nav-bar">
-      <a
-        class="hidden w-8 h-8 transition-transform duration-1000  md:inline hover:rotate-360"
-        href="/index.html"
-      >
+      <a class="hidden w-8 h-8 md:inline" href="/index.html">
         <img alt="Absolute Robotics logo." src="assets/images/logo.png" />
       </a>
       <input id="nav-toggle" type="checkbox" class="hidden peer" />
@@ -32,14 +29,14 @@
         />
       </label>
       <div class="flex-col w-full mobile-nav-buttons md:nav-buttons">
-        <a href="/" class="mobile-nav-button md:hidden">Home</a>
-        <a href="about.html" class="mobile-nav-button md:nav-button"
+        <a href="" class="mobile-nav-button md:hidden">Home</a>
+        <a href="about-us.html" class="mobile-nav-button md:nav-button"
           >About Us</a
         >
-        <a href="past_seasons.html" class="mobile-nav-button md:nav-button"
+        <a href="past-seasons.html" class="mobile-nav-button md:nav-button"
           >Past Seasons</a
         >
-        <a href="sponsor_us.html" class="mobile-nav-button md:nav-button"
+        <a href="sponsor-us.html" class="mobile-nav-button md:nav-button"
           >Sponsor Us</a
         >
         <a href="sponsors.html" class="mobile-nav-button md:nav-button"
@@ -56,7 +53,7 @@
       <div id="team" class="section">
         <h2 class="section-title">Our Team</h2>
         <div class="flex flex-col gap-32 text-lg">
-          <div class="image-paragraph">
+          <div class="image-paragraph-reverse">
             <img
               alt="Absolute Robotics logo."
               class="image-beside-paragraph"
@@ -140,7 +137,7 @@
 
     <footer class="footer">
       <div>Made with ♡ by Team 4308 & vidhan</div>
-      <div class="flex flex-row gap-2 justify-center items-center text-4xl">
+      <div class="flex flex-row gap-4 justify-center items-center text-4xl">
         <a
           class="social fab fa-facebook"
           href="https://facebook.com/frc4308"

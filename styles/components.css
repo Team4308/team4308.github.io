@@ -31,7 +31,7 @@
     @apply gap-4 h-screen bg-center bg-cover section;
   }
   .section {
-    @apply flex flex-col gap-16 justify-center items-center px-8 w-full text-center md:px-32;
+    @apply flex flex-col gap-8 justify-center items-center px-8 w-full text-center lg:px-32;
   }
   .hero-title {
     @apply text-6xl font-black text-red-500 md:text-8xl;
@@ -42,17 +42,47 @@
   .section-title {
     @apply text-4xl font-black text-red-400 md:text-6xl;
   }
+  .card {
+    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg;
+  }
   .mission {
-    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg md:w-96;
+    @apply card md:w-72;
   }
   .mission-title {
     @apply text-2xl font-bold md:text-4xl;
+  }
+  .season {
+    @apply flex flex-col gap-8 justify-center items-center;
+  }
+  .season-description {
+    @apply text-xl lg:px-64;
+  }
+  .events {
+    @apply flex flex-col flex-wrap gap-8 justify-center items-stretch md:flex-row;
+  }
+  .event {
+    @apply justify-center items-center card md:w-128;
+  }
+  .event-title {
+    @apply h-full text-2xl font-bold md:text-4xl;
+  }
+  .event-date {
+    @apply text-lg font-medium text-gray-500 md:text-xl;
+  }
+  .event-subtitle {
+    @apply text-xl font-semibold text-gray-400 md:text-2xl;
+  }
+  .event-image {
+    @apply w-96 rounded-lg;
   }
   .image-paragraph {
     @apply flex flex-col-reverse flex-wrap-reverse gap-8 justify-center items-center text-left md:flex-row;
   }
   .image-paragraph-reverse {
     @apply flex flex-col flex-wrap gap-8 justify-center items-center text-left md:flex-row;
+  }
+  .text-block {
+    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg;
   }
   .paragraph {
     @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg md:w-128;
@@ -70,7 +100,7 @@
     @apply flex flex-col gap-4 justify-center items-center p-4 bg-red-700 rounded-t-lg;
   }
   .social {
-    @apply p-2 bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
+    @apply flex justify-center items-center w-16 h-16 bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
   }
   .lead-image {
     @apply w-32 md:w-56;

@@ -716,13 +716,13 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hero {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -742,13 +742,13 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -805,7 +805,7 @@ video {
 
 @media (min-width: 768px) {
   .mission {
-    width: 24rem;
+    width: 18rem;
   }
 }
 
@@ -820,6 +820,108 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+}
+
+.season {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.season-description {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+  .season-description {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .events {
+    flex-direction: row;
+  }
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .event {
+    width: 32rem;
+  }
+}
+
+.event-title {
+  height: 100%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .event-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.event-date {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .event-date {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+.event-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .event-subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.event-image {
+  width: 24rem;
+  border-radius: 0.5rem;
 }
 
 .image-paragraph {
@@ -914,10 +1016,14 @@ video {
 }
 
 .social {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
-  padding: 0.5rem;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -995,8 +1101,8 @@ video {
   gap: 2rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-32 {
@@ -1012,12 +1118,16 @@ video {
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 
-.bg-about {
-  background-image: linear-gradient(to top, rgba(17, 24, 39, 1), rgba(17, 24, 39, 0.5)), url('../assets/images/about/hero.jpg');
+.bg-about-us {
+  background-image: linear-gradient(to top, rgba(17, 24, 39, 1), rgba(17, 24, 39, 0.5)), url('../assets/images/about-us/hero.jpg');
 }
 
 .bg-index {
   background-image: linear-gradient(to top, rgba(17, 24, 39, 1), rgba(17, 24, 39, 0.5)), url('../assets/images/index/hero.jpg');
+}
+
+.bg-past-seasons {
+  background-image: linear-gradient(to top, rgba(17, 24, 39, 1), rgba(17, 24, 39, 0.5)), url('../assets/images/past-seasons/hero.jpg');
 }
 
 .text-left {
@@ -1054,21 +1164,12 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
 }
 
 .smooth-scrolling {
   scroll-behavior: smooth;
-}
-
-.hover\:rotate-360:hover {
-  --tw-rotate: 360deg;
-  transform: var(--tw-transform);
 }
 
 .peer:checked ~ .peer-checked\:rotate-180 {
