@@ -64,7 +64,7 @@
     @apply justify-center items-center card md:w-128;
   }
   .event-title {
-    @apply h-full text-2xl font-bold md:text-4xl;
+    @apply h-full text-2xl font-bold transition-colors hover:text-red-300 md:text-4xl;
   }
   .event-date {
     @apply text-lg font-medium text-gray-500 md:text-xl;
