@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .mobile-nav-bar {
+    @apply flex fixed flex-col justify-center items-center p-4 w-full bg-red-700 rounded-b-lg;
+  }
+  .nav-bar {
+    @apply fixed flex-row gap-4 justify-center items-center p-4 w-full bg-red-700 rounded-b-lg;
+  }
+  .mobile-nav-buttons {
+    @apply flex flex-col gap-4 justify-center items-center w-full max-h-0 transition-all duration-500 peer-checked:pt-4 peer-checked:max-h-screen;
+  }
+  .nav-buttons {
+    @apply flex flex-row gap-4 pt-0 ml-auto w-auto peer-checked:pt-0;
+  }
+  .mobile-nav-button {
+    @apply invisible p-2 w-0 text-center text-transparent whitespace-nowrap bg-red-600 rounded-lg transition-all duration-200 hover:bg-red-400;
+  }
+  .peer:checked ~ .mobile-nav-buttons > .mobile-nav-button {
+    @apply visible w-full text-white;
+  }
+  .nav-button {
+    @apply visible p-2 w-auto text-center text-current bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
+  }
+  .section {
+    @apply flex flex-col justify-center items-center px-8 w-full text-center md:px-32;
+  }
+  .section-header {
+    @apply text-6xl font-black text-red-500 md:text-8xl;
+  }
+  .mission {
+    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg md:w-96 md:h-48;
+  }
+  .image-paragraph {
+    @apply flex flex-col flex-wrap gap-16 justify-center items-center text-left md:flex-row;
+  }
+  .paragraph {
+    @apply p-8 bg-gray-800 rounded-lg md:w-128;
+  }
+  .footer {
+    @apply flex flex-col gap-4 justify-center items-center p-4 bg-red-700 rounded-t-lg;
+  }
+  .social {
+    @apply p-2 bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
+  }
+}
+
+.smooth-scrolling {
+  scroll-behavior: smooth;
+}

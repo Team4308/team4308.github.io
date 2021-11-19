@@ -1,0 +1,11 @@
+{
+  "name": "4308-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vidhanio/4308-site",
+  "author": "Vidhan Bhatt <me@vidhan.io>",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
