@@ -652,6 +652,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
   padding: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .mobile-nav-buttons {
@@ -755,6 +757,18 @@ video {
   }
 }
 
+.description {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+  .description {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+}
+
 .hero-title {
   font-size: 3.75rem;
   line-height: 1;
@@ -805,7 +819,7 @@ video {
 
 @media (min-width: 768px) {
   .mission {
-    width: 18rem;
+    width: 24rem;
   }
 }
 
@@ -932,7 +946,7 @@ video {
   border-radius: 0.5rem;
 }
 
-.image-paragraph {
+.two-column {
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap-reverse;
@@ -943,12 +957,12 @@ video {
 }
 
 @media (min-width: 768px) {
-  .image-paragraph {
+  .two-column {
     flex-direction: row;
   }
 }
 
-.image-paragraph-reverse {
+.two-column-reverse {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -959,7 +973,7 @@ video {
 }
 
 @media (min-width: 768px) {
-  .image-paragraph-reverse {
+  .two-column-reverse {
     flex-direction: row;
   }
 }
@@ -1010,6 +1024,30 @@ video {
   }
 }
 
+.lead-image {
+  width: 8rem;
+}
+
+@media (min-width: 768px) {
+  .lead-image {
+    width: 14rem;
+  }
+}
+
+.list-row {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.list-row:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgba(37, 47, 62, var(--tw-bg-opacity));
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -1023,15 +1061,27 @@ video {
   padding: 1rem;
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .social {
   display: flex;
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1043,13 +1093,18 @@ video {
   background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
 }
 
-.lead-image {
-  width: 8rem;
-}
-
 @media (min-width: 768px) {
-  .lead-image {
-    width: 14rem;
+  .social {
+    height: 4rem;
+  }
+
+  .social {
+    width: 4rem;
+  }
+
+  .social {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1057,8 +1112,16 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
+}
+
+.contents {
+  display: contents;
 }
 
 .hidden {
@@ -1079,6 +1142,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1109,21 +1184,43 @@ video {
   gap: 2rem;
 }
 
+.gap-32 {
+  gap: 8rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
-.gap-32 {
-  gap: 8rem;
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-bl-lg {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-br-lg {
+  border-bottom-right-radius: 0.5rem;
+}
+
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }
 
 .bg-about-us {
@@ -1138,8 +1235,16 @@ video {
   background-image: linear-gradient(to top, rgba(17, 24, 39, 1), rgba(17, 24, 39, 0.5)), url('../assets/images/past-seasons/hero.jpg');
 }
 
+.bg-sponsor-us {
+  background-image: linear-gradient(to top, rgba(17, 24, 39, 1), rgba(17, 24, 39, 0.5)), url('../assets/images/sponsor-us/hero.jpg');
+}
+
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-sans {
@@ -1151,23 +1256,72 @@ video {
   line-height: 1.75rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-white {
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-gray-300 {
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+
+.text-red-300 {
+  --tw-text-opacity: 1;
+  color: rgba(252, 165, 165, var(--tw-text-opacity));
+}
+
+.text-yellow-800 {
+  --tw-text-opacity: 1;
+  color: rgba(146, 64, 14, var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgba(251, 191, 36, var(--tw-text-opacity));
 }
 
 .transition-transform {
   transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1180,9 +1334,24 @@ video {
   scroll-behavior: smooth;
 }
 
+.hover\:text-red-400:hover {
+  --tw-text-opacity: 1;
+  color: rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
 .peer:checked ~ .peer-checked\:rotate-180 {
   --tw-rotate: 180deg;
   transform: var(--tw-transform);
+}
+
+@media (min-width: 640px) {
+  .sm\:grid {
+    display: grid;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1222,6 +1391,11 @@ video {
 
   .md\:nav-bar {
     padding: 1rem;
+  }
+
+  .md\:nav-bar {
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
   .md\:nav-buttons {

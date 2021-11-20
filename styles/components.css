@@ -4,10 +4,10 @@
 
 @layer components {
   .mobile-nav-bar {
-    @apply flex fixed flex-col justify-center items-center p-4 w-full bg-red-700 rounded-b-lg;
+    @apply flex fixed flex-col justify-center items-center p-4 w-full text-white bg-red-700 rounded-b-lg;
   }
   .nav-bar {
-    @apply fixed flex-row gap-4 justify-center items-center p-4 w-full bg-red-700 rounded-b-lg;
+    @apply fixed flex-row gap-4 justify-center items-center p-4 w-full text-white bg-red-700 rounded-b-lg;
   }
   .mobile-nav-buttons {
     @apply flex flex-col gap-4 justify-center items-center w-full max-h-0 transition-all duration-500 peer-checked:pt-4 peer-checked:max-h-screen;
@@ -33,6 +33,9 @@
   .section {
     @apply flex flex-col gap-8 justify-center items-center px-8 w-full text-center lg:px-32;
   }
+  .description {
+    @apply text-xl lg:px-64;
+  }
   .hero-title {
     @apply text-6xl font-black text-red-500 md:text-8xl;
   }
@@ -55,7 +58,7 @@
     @apply flex flex-col gap-8 justify-center items-center;
   }
   .season-description {
-    @apply text-xl lg:px-64;
+    @apply description;
   }
   .events {
     @apply flex flex-col flex-wrap gap-8 justify-center items-stretch md:flex-row;
@@ -75,10 +78,10 @@
   .event-image {
     @apply w-96 rounded-lg;
   }
-  .image-paragraph {
+  .two-column {
     @apply flex flex-col-reverse flex-wrap-reverse gap-8 justify-center items-center text-left md:flex-row;
   }
-  .image-paragraph-reverse {
+  .two-column-reverse {
     @apply flex flex-col flex-wrap gap-8 justify-center items-center text-left md:flex-row;
   }
   .text-block {
@@ -96,14 +99,23 @@
   .image-beside-paragraph {
     @apply self-auto rounded-lg md:w-128;
   }
+  .lead-image {
+    @apply w-32 md:w-56;
+  }
+  .list-row {
+    @apply flex justify-center items-center p-4 w-full h-full;
+  }
+  .list-row:nth-child(even) {
+    @apply bg-gray-775;
+  }
   .footer {
     @apply flex flex-col gap-4 justify-center items-center p-4 bg-red-700 rounded-t-lg;
   }
-  .social {
-    @apply flex justify-center items-center w-16 h-16 bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
+  .socials {
+    @apply flex flex-row gap-4 justify-center items-center text-4xl;
   }
-  .lead-image {
-    @apply w-32 md:w-56;
+  .social {
+    @apply flex justify-center items-center w-8 h-8 text-xl bg-red-600 rounded-lg transition-colors duration-200 md:h-16 md:w-16 md:text-4xl hover:bg-red-400;
   }
 }
 
