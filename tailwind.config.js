@@ -25,6 +25,9 @@ module.exports = {
       backgroundColor: {
         "gray-775": "#252F3E",
       },
+      fontSize: {
+        none: "0rem; line-height: 1.5rem",
+      },
     },
   },
   variants: {

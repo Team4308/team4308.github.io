@@ -642,15 +642,14 @@ video {
 }
 
 .mobile-nav-button {
-  visibility: hidden;
   width: 0px;
   white-space: nowrap;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
-  padding: 0.5rem;
+  padding: 0px;
   text-align: center;
-  color: transparent;
+  font-size: 0rem; line-height: 1.5rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -663,10 +662,10 @@ video {
 }
 
 .peer:checked ~ .mobile-nav-buttons > .mobile-nav-button {
-  visibility: visible;
   width: 100%;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .main {
@@ -1477,10 +1476,6 @@ video {
   }
 
   .md\:nav-button {
-    visibility: visible;
-  }
-
-  .md\:nav-button {
     width: auto;
   }
 
@@ -1499,6 +1494,11 @@ video {
 
   .md\:nav-button {
     text-align: center;
+  }
+
+  .md\:nav-button {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:nav-button {
