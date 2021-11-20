@@ -642,12 +642,13 @@ video {
 }
 
 .mobile-nav-button {
+  visibility: hidden;
   width: 0px;
   white-space: nowrap;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
-  padding: 0px;
+  padding: 0.5rem;
   text-align: center;
   color: transparent;
   transition-property: all;
@@ -662,8 +663,8 @@ video {
 }
 
 .peer:checked ~ .mobile-nav-buttons > .mobile-nav-button {
+  visibility: visible;
   width: 100%;
-  padding: 0.5rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
@@ -1476,6 +1477,10 @@ video {
   }
 
   .md\:nav-button {
+    visibility: visible;
+  }
+
+  .md\:nav-button {
     width: auto;
   }
 
@@ -1486,10 +1491,6 @@ video {
   .md\:nav-button {
     --tw-bg-opacity: 1;
     background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
-  }
-
-  .md\:nav-button {
-    padding: 0.5rem;
   }
 
   .md\:nav-button {
