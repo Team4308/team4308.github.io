@@ -34,7 +34,7 @@
     @apply flex flex-col gap-8 justify-center items-center px-8 w-full text-center lg:px-32;
   }
   .description {
-    @apply text-xl lg:px-64;
+    @apply text-xl md:px-16 lg:px-32 xl:px-64;
   }
   .hero-title {
     @apply text-6xl font-black text-red-500 md:text-8xl;
@@ -43,7 +43,7 @@
     @apply text-4xl font-extrabold text-red-400;
   }
   .section-title {
-    @apply text-4xl font-black text-red-400 md:text-6xl;
+    @apply text-6xl font-black text-red-400;
   }
   .card {
     @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg;

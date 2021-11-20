@@ -762,7 +762,21 @@ video {
   line-height: 1.75rem;
 }
 
+@media (min-width: 768px) {
+  .description {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
 @media (min-width: 1024px) {
+  .description {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
   .description {
     padding-left: 16rem;
     padding-right: 16rem;
@@ -793,18 +807,11 @@ video {
 }
 
 .section-title {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 3.75rem;
+  line-height: 1;
   font-weight: 900;
   --tw-text-opacity: 1;
   color: rgba(248, 113, 113, var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  .section-title {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 .mission {
@@ -849,7 +856,21 @@ video {
   line-height: 1.75rem;
 }
 
+@media (min-width: 768px) {
+  .season-description {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
 @media (min-width: 1024px) {
+  .season-description {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
   .season-description {
     padding-left: 16rem;
     padding-right: 16rem;
