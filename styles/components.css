@@ -16,13 +16,13 @@
     @apply flex flex-row gap-4 pt-0 ml-auto w-auto peer-checked:pt-0;
   }
   .mobile-nav-button {
-    @apply p-0 w-0 text-center whitespace-nowrap bg-red-600 rounded-lg transition-all duration-200 text-none hover:bg-red-400;
+    @apply p-0 w-0 text-center text-transparent whitespace-nowrap bg-red-600 rounded-lg transition-all duration-200 hover:bg-red-400;
   }
   .peer:checked ~ .mobile-nav-buttons > .mobile-nav-button {
-    @apply p-2 w-full text-base;
+    @apply p-2 w-full text-white;
   }
   .nav-button {
-    @apply p-2 w-auto text-base text-center text-current bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
+    @apply p-2 w-auto text-center text-current text-white bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
   }
   .main {
     @apply flex flex-col gap-32 justify-center items-center pb-16;

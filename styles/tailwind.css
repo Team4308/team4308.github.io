@@ -649,7 +649,7 @@ video {
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
   padding: 0px;
   text-align: center;
-  font-size: 0rem; line-height: 1.5rem;
+  color: transparent;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -664,8 +664,8 @@ video {
 .peer:checked ~ .mobile-nav-buttons > .mobile-nav-button {
   width: 100%;
   padding: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .main {
@@ -1497,12 +1497,12 @@ video {
   }
 
   .md\:nav-button {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    color: currentColor;
   }
 
   .md\:nav-button {
-    color: currentColor;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
   .md\:nav-button {
