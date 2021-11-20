@@ -46,7 +46,7 @@
     @apply text-6xl font-black text-red-400;
   }
   .card {
-    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg;
+    @apply flex flex-col p-8 bg-gray-800 rounded-lg;
   }
   .mission {
     @apply card md:w-96;
@@ -64,7 +64,7 @@
     @apply flex flex-col flex-wrap gap-8 justify-center md:flex-row;
   }
   .event {
-    @apply justify-center items-center card md:w-128;
+    @apply gap-4 justify-center items-center card md:w-128;
   }
   .event-title {
     @apply h-full text-2xl font-bold transition-colors hover:text-red-300 md:text-4xl;
@@ -112,7 +112,7 @@
     @apply flex flex-col flex-wrap gap-8 justify-center md:flex-row;
   }
   .sponsor {
-    @apply justify-center items-center card md:w-128;
+    @apply gap-8 justify-center items-center card md:w-128;
   }
   .sponsor-name {
     @apply h-full text-2xl font-bold transition-colors hover:text-red-300 md:text-4xl;
