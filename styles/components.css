@@ -52,7 +52,7 @@
     @apply flex flex-col p-8 bg-gray-200 rounded-lg dark:bg-gray-800;
   }
   .mission {
-    @apply card md:w-96;
+    @apply card md:w-80;
   }
   .mission-title {
     @apply text-2xl font-bold md:text-4xl;
