@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .site {
+    @apply overflow-x-hidden w-screen font-sans text-gray-900 bg-gray-300 dark:text-gray-300 dark:bg-gray-900;
+  }
   .mobile-nav-bar {
     @apply flex fixed flex-col justify-center items-center p-4 w-full text-white bg-red-700 rounded-b-lg;
   }
@@ -37,19 +40,19 @@
     @apply text-xl md:px-16 lg:px-32 xl:px-64;
   }
   .hero-title {
-    @apply text-6xl font-black text-red-500 md:text-8xl;
+    @apply text-6xl font-black text-red-700 md:text-8xl;
   }
   .hero-subtitle {
-    @apply text-4xl font-extrabold text-red-400;
+    @apply text-4xl font-extrabold text-red-600 dark:text-red-400;
   }
   .section-title {
-    @apply text-6xl font-black text-red-400;
+    @apply text-6xl font-black text-red-600 dark:text-red-400;
   }
   .card {
-    @apply flex flex-col p-8 bg-gray-800 rounded-lg;
+    @apply flex flex-col p-8 bg-gray-200 rounded-lg dark:bg-gray-800;
   }
   .mission {
-    @apply card md:w-96;
+    @apply card md:w-80;
   }
   .mission-title {
     @apply text-2xl font-bold md:text-4xl;
@@ -67,13 +70,13 @@
     @apply gap-4 justify-center items-center card md:w-128;
   }
   .event-title {
-    @apply h-full text-2xl font-bold transition-colors hover:text-red-300 md:text-4xl;
+    @apply h-full text-2xl font-bold transition-colors hover:text-red-600 dark:hover:text-red-300 md:text-4xl;
   }
   .event-date {
     @apply text-lg font-medium text-gray-500 md:text-xl;
   }
   .event-subtitle {
-    @apply text-xl font-semibold text-gray-400 md:text-2xl;
+    @apply text-xl font-semibold text-gray-600 dark:text-gray-400 md:text-2xl;
   }
   .event-image {
     @apply w-96 rounded-lg;
@@ -85,10 +88,10 @@
     @apply flex flex-col flex-wrap gap-8 justify-center items-center text-left md:flex-row;
   }
   .text-block {
-    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg;
+    @apply flex flex-col gap-4 p-8 bg-gray-200 rounded-lg dark:bg-gray-800;
   }
   .paragraph {
-    @apply flex flex-col gap-4 p-8 bg-gray-800 rounded-lg md:w-128;
+    @apply text-block md:w-128;
   }
   .subparagraph {
     @apply flex flex-col gap-2;
@@ -115,7 +118,7 @@
     @apply gap-8 justify-center items-center card md:w-128;
   }
   .sponsor-name {
-    @apply h-full text-2xl font-bold transition-colors hover:text-red-300 md:text-4xl;
+    @apply h-full text-2xl font-bold transition-colors md:text-4xl;
   }
   .sponsor-image {
     @apply rounded-lg md:w-128;
