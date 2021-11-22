@@ -776,7 +776,7 @@ video {
   line-height: 1;
   font-weight: 900;
   --tw-text-opacity: 1;
-  color: rgba(185, 28, 28, var(--tw-text-opacity));
+  color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
