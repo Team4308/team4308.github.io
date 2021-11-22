@@ -1,97 +1,144 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Absolute Robotics</title>
-    
-    <!-- AlpineJS -->
-    <script defer src="/js/alpine.min.js"></script>
+<html lang="en" class="smooth-scrolling">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- PicoCSS -->
-    <link rel="stylesheet" href="/css/pico.min.css">
+    <script
+      src="https://kit.fontawesome.com/e3867b32f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/tailwind.css" />
 
-    <!-- Boxicons -->
-    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-    <nav class="container-fluid">
-        <ul>
-            <li>
-                <a href="/">
-                    <img src="/assets/images/navbar_icon.png" style="max-width: 6vw;">
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li class="nav-element">
-                <a href="/about.html" class="contrast" role="button">About Us</a>
-            </li>
-            <li class="nav-element">
-                <a href="/past_seasons.html" class="contrast" role="button">Past Seasons</a>
-            </li>
-            <li class="nav-element">
-                <a href="/sponsor_us.html" class="contrast" role="button">Sponsor Us</a>
-            </li>
-            <li class="nav-element">
-                <a href="/sponsors.html" class="contrast" role="button">Our Sponsors</a>
-            </li>
-        </ul>
+    <title>Team 4308 - Absolute Robotics</title>
+  </head>
+  <body class="w-screen font-sans text-gray-300 bg-gray-900">
+    <nav class="mobile-nav-bar md:nav-bar">
+      <a class="hidden w-8 h-8 md:inline" href="index.html">
+        <img alt="Absolute Robotics logo." src="assets/images/logo.png" />
+      </a>
+      <input id="nav-toggle" type="checkbox" class="hidden peer" />
+      <label
+        for="nav-toggle"
+        class="flex flex-col justify-center items-center w-full text-xl transition-transform duration-500  md:hidden peer-checked:rotate-180"
+      >
+        <img
+          alt="Absolute Robotics logo."
+          class="w-8"
+          src="assets/images/logo.png"
+        />
+      </label>
+      <div class="flex-col w-full mobile-nav-buttons md:nav-buttons">
+        <a href="index.html" class="mobile-nav-button md:hidden">Home</a>
+        <a href="about-us.html" class="mobile-nav-button md:nav-button"
+          >About Us</a
+        >
+        <a href="past-seasons.html" class="mobile-nav-button md:nav-button"
+          >Past Seasons</a
+        >
+        <a href="sponsor-us.html" class="mobile-nav-button md:nav-button"
+          >Sponsor Us</a
+        >
+        <a href="sponsors.html" class="mobile-nav-button md:nav-button"
+          >Sponsors</a
+        >
+      </div>
     </nav>
-    <div class="hero s-hero">
-        <header class="container">
-            <hgroup>
-                <h1>SPONSORS</h1>
-                <h2>A SPECIAL THANKS TO...</h2>
-            </hgroup>
-        </header>
-    </div>
 
-    <main class="container">
-        <section>
-            <h1 style="text-align: center;"><u>PLATINUM TIER</u></h1>
-            <div class="grid">
-                <div style="text-align: center;">
-                    <img style="padding-bottom: 1rem;" src="/assets/images/s/logos/CJT Financial.jpg">
-                </div>
-            </div>
-        </section>
-        <section>
-            <h1 style="text-align: center;"><u>GOLD TIER</u></h1>
-            <div class="grid">
-                <div style="text-align: center;">
-                    <img style="padding-bottom: 1rem;" src="/assets/images/s/logos/Woodlands SS.jpg">
-                </div>
-                <div style="text-align: center;">
-                    <img style="padding-bottom: 1rem;" src="/assets/images/s/logos/Metro.jpg">
-                </div>
-            </div>
-        </section>
-        <section>
-            <h1 style="text-align: center;"><u>SILVER TIER</u></h1>
-            <div class="grid">
-                <div style="text-align: center;">
-                    <img style="padding-bottom: 1rem;" src="/assets/images/s/logos/Mississauga Lion's Club.jpg">
-                    <img style="padding-bottom: 1rem;" src="/assets/images/s/logos/East Port MFG.jpg">
-                </div>
-                <div style="text-align: center;">
-                    <img style="padding-bottom: 1rem;" src="/assets/images/s/logos/Homelife Golconda Realty.png">
-                    <img style="padding-bottom: 1rem;" src="/assets/images/s/logos/JiuKun.jpg">
-                </div>
-            </div>
-        </section>
+    <main class="main">
+      <div id="hero" class="hero bg-sponsors">
+        <h1 class="hero-title">Sponsors</h1>
+        <h3 class="hero-subtitle">A Special Thanks</h3>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Platinum Tier</h2>
+        <div class="sponsors">
+          <div class="sponsor">
+            <h3 class="sponsor-name">CJT Financial Inc.</h3>
+            <img
+              class="sponsor-image"
+              src="assets/images/sponsors/platinum/CJT Financial.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Gold Tier</h2>
+        <div class="sponsors">
+          <div class="sponsor">
+            <h3 class="sponsor-name">The Woodlands SS</h3>
+            <img
+              class="sponsor-image"
+              src="assets/images/sponsors/gold/The Woodlands SS.png"
+            />
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor-name">Metro</h3>
+            <img
+              class="sponsor-image"
+              src="assets/images/sponsors/gold/Metro.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Silver Tier</h2>
+        <div class="sponsors">
+          <div class="sponsor">
+            <h3 class="sponsor-name">Mississauga Cooksville Lions Club</h3>
+            <img
+              class="sponsor-image"
+              src="assets/images/sponsors/silver/Mississauga Cooksville Lions Club.png"
+            />
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor-name">East Port MFG</h3>
+            <img
+              class="sponsor-image"
+              src="assets/images/sponsors/silver/East Port MFG.png"
+            />
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor-name">Homelife Golconda Realty</h3>
+            <img
+              class="sponsor-image"
+              src="assets/images/sponsors/silver/Homelife Golconda Realty.png"
+            />
+          </div>
+          <div class="sponsor">
+            <h3 class="sponsor-name">JiuKun</h3>
+            <img
+              class="sponsor-image"
+              src="assets/images/sponsors/silver/JiuKun.png"
+            />
+          </div>
+        </div>
+      </div>
     </main>
 
-    <hr class="zbm">
-    <footer style="text-align: center;">
-        <a href="https://www.facebook.com/frc4308" style="color: #3b5998"><i class="bx bxl-facebook-square bx-lg"></i></a>
-        <a href="https://twitter.com/frcteam4308" style="color: #1da1f2"><i class="bx bxl-twitter bx-lg"></i></a>
-        <a href="https://www.youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw" style="color: #ff0000"><i class="bx bxl-youtube bx-lg"></i></a>
-        <a href="https://www.instagram.com/frc4308/" style="color: #c13584"><i class="bx bxl-instagram bx-lg"></i></a>
-        <a href="mailto:the.woodlands.robotics@gmail.com"><i class="bx bx-mail-send bx-lg"></i></a>
+    <footer class="footer">
+      <div class="socials">
+        <a
+          class="social fab fa-facebook"
+          href="https://facebook.com/frc4308"
+        ></a>
+        <a
+          class="social fab fa-twitter"
+          href="https://twitter.com/frcteam4308"
+        ></a>
+        <a
+          class="social fab fa-instagram"
+          href="https://instagram.com/frc4308"
+        ></a>
+        <a
+          class="social fab fa-youtube"
+          href="https://youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw"
+        ></a>
+        <a
+          class="social fas fa-envelope"
+          href="mailto:the.woodlands.robotics@gmail.com"
+        ></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

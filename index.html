@@ -1,121 +1,163 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Absolute Robotics</title>
-    
-    <!-- AlpineJS -->
-    <script defer src="/js/alpine.min.js"></script>
+<html lang="en" class="smooth-scrolling">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- PicoCSS -->
-    <link rel="stylesheet" href="/css/pico.min.css">
+    <script
+      src="https://kit.fontawesome.com/e3867b32f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/tailwind.css" />
 
-    <!-- Boxicons -->
-    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-    <nav class="container-fluid">
-        <ul>
-            <li>
-                <a href="/">
-                    <img src="/assets/images/navbar_icon.png" style="max-width: 6vw;">
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li class="nav-element">
-                <a href="/about.html" class="contrast" role="button">About Us</a>
-            </li>
-            <li class="nav-element">
-                <a href="/past_seasons.html" class="contrast" role="button">Past Seasons</a>
-            </li>
-            <li class="nav-element">
-                <a href="/sponsor_us.html" class="contrast" role="button">Sponsor Us</a>
-            </li>
-            <li class="nav-element">
-                <a href="/sponsors.html" class="contrast" role="button">Our Sponsors</a>
-            </li>
-        </ul>
+    <title>Team 4308 - Absolute Robotics</title>
+  </head>
+  <body class="w-screen font-sans text-gray-300 bg-gray-900">
+    <nav class="mobile-nav-bar md:nav-bar">
+      <a class="hidden w-8 h-8 md:inline" href="index.html">
+        <img alt="Absolute Robotics logo." src="assets/images/logo.png" />
+      </a>
+      <input id="nav-toggle" type="checkbox" class="hidden peer" />
+      <label
+        for="nav-toggle"
+        class="flex flex-col justify-center items-center w-full text-xl transition-transform duration-500  md:hidden peer-checked:rotate-180"
+      >
+        <img
+          alt="Absolute Robotics logo."
+          class="w-8"
+          src="assets/images/logo.png"
+        />
+      </label>
+      <div class="flex-col w-full mobile-nav-buttons md:nav-buttons">
+        <a href="index.html" class="mobile-nav-button md:hidden">Home</a>
+        <a href="about-us.html" class="mobile-nav-button md:nav-button"
+          >About Us</a
+        >
+        <a href="past-seasons.html" class="mobile-nav-button md:nav-button"
+          >Past Seasons</a
+        >
+        <a href="sponsor-us.html" class="mobile-nav-button md:nav-button"
+          >Sponsor Us</a
+        >
+        <a href="sponsors.html" class="mobile-nav-button md:nav-button"
+          >Sponsors</a
+        >
+      </div>
     </nav>
-    <div class="hero lp-hero">
-        <header class="container">
-            <hgroup>
-                <h1>ABSOLUTE ROBOTICS</h1>
-                <h2>FRC TEAM 4308</h2>
-            </hgroup>
-        </header>
-    </div>
 
-    <main class="container">
-        <section>
-            <div class="grid">
-                <img src="/assets/images/logo.jpg">
-                <div>
-                    <h1><u>OUR TEAM</u></h1>
-                    <p>
-                        Absolute Robotics is a robotics team based at the Woodlands Secondary School in Mississauga, Ontario.
-                        We are currently made up of over 70 students, teachers, and mentors who are passionate about
-                        entrepreneurship, business, engineering, and technology!
-                        <br>
-                        <br>
-                        Our members gain invaluable hands-on experiences in the world of engineering, problem solving and business.
-                        By competing in the FIRST Robotics Competition (FRC), they develop key skills and competences
-                        that are crucial in our constantly evolving technological society.
-                    </p>
-                </div>
+    <main class="main">
+      <div id="hero" class="hero bg-index">
+        <h1 class="hero-title">Absolute Robotics</h1>
+        <h3 class="hero-subtitle">FRC Team 4308</h3>
+      </div>
+      <div id="team" class="section">
+        <h2 class="section-title">Our Team</h2>
+        <div class="flex flex-col gap-32 text-lg">
+          <div class="two-column-reverse">
+            <img
+              alt="Absolute Robotics logo."
+              class="image-beside-paragraph"
+              src="assets/images/logo.png"
+            />
+            <div class="paragraph">
+              <div class="subparagraph">
+                Absolute Robotics is a robotics team based at the Woodlands
+                Secondary School in Mississauga, Ontario. We are currently made
+                up of over 70 students, teachers, and mentors who are passionate
+                about entrepreneurship, business, engineering, and technology!
+              </div>
+              <div class="subparagraph">
+                Our members gain invaluable hands-on experiences in the world of
+                engineering, problem solving and business. By competing in the
+                FIRST Robotics Competition (FRC), they develop key skills and
+                competences that are crucial in our constantly evolving
+                technological society.
+              </div>
             </div>
-        </section>
-        <section>
-            <h1 style="text-align: center;"><u>OUR MISSIONS</u></h1>
-            <div class="grid" style="align-items: stretch;">
-                <article style="margin-top: 0; padding: 1rem;">
-                    <h2 class="zbm">Build <i class="bx bx-wrench"></i></h2>
-                    <p class="zbm">
-                        Work together with students and teachers to manufacture industrial grade robots using simple tools and materials.
-                    </p>
-                </article>
-                <article style="margin-top: 0; padding: 1rem;">
-                    <h2 class="zbm">Innovate <i class="bx bx-bulb"></i></h2>
-                    <p class="zbm">
-                        Create new solutions to challenging problems by using a reiterative design philosophy to develop the best solution.
-                    </p>
-                </article>
-                <article style="margin-top: 0; padding: 1rem;">
-                    <h2 class="zbm">Teach & Inspire <i class="bx bx-hive"></i></h2>
-                    <p class="zbm">
-                        Student and mentors alike teach each other the ways to build, innovate, and finance their team.
-                        Inspire students to become the best they can be at any field they wish to be in.
-                    </p>
-                </article>
+          </div>
+        </div>
+      </div>
+      <div id="missions" class="section">
+        <h2 class="section-title">Our Missions</h2>
+        <div
+          class="flex flex-col flex-wrap gap-8 justify-center items-stretch text-left  md:flex-row"
+        >
+          <div class="mission">
+            <h3 class="mission-title">Build</h3>
+            <div>
+              Work together with students and teachers to manufacture industrial
+              grade robots using simple tools and materials.
             </div>
-        </section>
-        <section>
-            <div class="grid">
-                <div>
-                    <h1><u>WHAT WE DO</u></h1>
-                    <p>
-                        Absolute Robotics competes in the annual FIRST Robotics Competition (FRC), an international
-                        competition where teams design and build an industrial-sized robot within 6 weeks to participate
-                        in an engineering challenge. Teams compete with robots in their local and international
-                        community at competitions around the world, predominantly in Ontario and the USA.
-                    </p>
-                </div>
-                <img src="/assets/images/lp/showcase.jpg">
+          </div>
+          <div class="mission">
+            <h3 class="mission-title">Innovate</h3>
+            <div>
+              Create new solutions to challenging problems by using a
+              reiterative design philosophy to develop the best solution.
             </div>
-        </section>
+          </div>
+          <div class="mission">
+            <h3 class="mission-title">Teach & Learn</h3>
+            <div>
+              Student and mentors alike teach each other the ways to build,
+              innovate, and finance their team. Inspire students to become the
+              best they can be at any field they wish to be in.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="what-we-do" class="section">
+        <h2 class="section-title">What We Do</h2>
+        <div class="flex flex-col gap-32 text-lg">
+          <div class="two-column">
+            <div class="paragraph">
+              <div class="subparagraph">
+                Absolute Robotics is a robotics team based at the Woodlands
+                Secondary School in Mississauga, Ontario. We are currently made
+                up of over 70 students, teachers, and mentors who are passionate
+                about entrepreneurship, business, engineering, and technology!
+              </div>
+              <div class="subparagraph">
+                Our members gain invaluable hands-on experiences in the world of
+                engineering, problem solving and business. By competing in the
+                FIRST Robotics Competition (FRC), they develop key skills and
+                competences that are crucial in our constantly evolving
+                technological society.
+              </div>
+            </div>
+            <img
+              alt="Absolute Robotics team members posing with their robot."
+              class="rounded-lg image-beside-paragraph"
+              src="assets/images/index/showcase.jpg"
+            />
+          </div>
+        </div>
+      </div>
     </main>
 
-    <hr class="zbm">
-    <footer style="text-align: center;">
-        <a href="https://www.facebook.com/frc4308" style="color: #3b5998"><i class="bx bxl-facebook-square bx-lg"></i></a>
-        <a href="https://twitter.com/frcteam4308" style="color: #1da1f2"><i class="bx bxl-twitter bx-lg"></i></a>
-        <a href="https://www.youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw" style="color: #ff0000"><i class="bx bxl-youtube bx-lg"></i></a>
-        <a href="https://www.instagram.com/frc4308/" style="color: #c13584"><i class="bx bxl-instagram bx-lg"></i></a>
-        <a href="mailto:the.woodlands.robotics@gmail.com"><i class="bx bx-mail-send bx-lg"></i></a>
+    <footer class="footer">
+      <div class="socials">
+        <a
+          class="social fab fa-facebook"
+          href="https://facebook.com/frc4308"
+        ></a>
+        <a
+          class="social fab fa-twitter"
+          href="https://twitter.com/frcteam4308"
+        ></a>
+        <a
+          class="social fab fa-instagram"
+          href="https://instagram.com/frc4308"
+        ></a>
+        <a
+          class="social fab fa-youtube"
+          href="https://youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw"
+        ></a>
+        <a
+          class="social fas fa-envelope"
+          href="mailto:the.woodlands.robotics@gmail.com"
+        ></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scrolling">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/e3867b32f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/tailwind.css" />
+
+    <title>Team 4308 - Absolute Robotics</title>
+  </head>
+  <body class="w-screen font-sans text-gray-300 bg-gray-900">
+    <nav class="mobile-nav-bar md:nav-bar">
+      <a class="hidden w-8 h-8 md:inline" href="index.html">
+        <img alt="Absolute Robotics logo." src="assets/images/logo.png" />
+      </a>
+      <input id="nav-toggle" type="checkbox" class="hidden peer" />
+      <label
+        for="nav-toggle"
+        class="flex flex-col justify-center items-center w-full text-xl transition-transform duration-500  md:hidden peer-checked:rotate-180"
+      >
+        <img
+          alt="Absolute Robotics logo."
+          class="w-8"
+          src="assets/images/logo.png"
+        />
+      </label>
+      <div class="flex-col w-full mobile-nav-buttons md:nav-buttons">
+        <a href="index.html" class="mobile-nav-button md:hidden">Home</a>
+        <a href="about-us.html" class="mobile-nav-button md:nav-button"
+          >About Us</a
+        >
+        <a href="past-seasons.html" class="mobile-nav-button md:nav-button"
+          >Past Seasons</a
+        >
+        <a href="sponsor-us.html" class="mobile-nav-button md:nav-button"
+          >Sponsor Us</a
+        >
+        <a href="sponsors.html" class="mobile-nav-button md:nav-button"
+          >Sponsors</a
+        >
+      </div>
+    </nav>
+
+    <main class="main">
+      <div id="hero" class="hero bg-about-us">
+        <h1 class="hero-title">About Us</h1>
+        <h3 class="hero-subtitle">Our Team</h3>
+      </div>
+      <div id="leads" class="section">
+        <h2 class="section-title">Meet Our Leads</h2>
+        <div class="flex flex-row flex-wrap gap-8 justify-center items-center">
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/captain.png"
+            alt="Absolute Robotics captain."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/strategy.png"
+            alt="Absolute Robotics strategy."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/secretary.png"
+            alt="Absolute Robotics secretary."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/scouting.png"
+            alt="Absolute Robotics scouting."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/mechanical.png"
+            alt="Absolute Robotics mechanical."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/electrical.png"
+            alt="Absolute Robotics electrical."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/design.png"
+            alt="Absolute Robotics design."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/programming.png"
+            alt="Absolute Robotics programming."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/media.png"
+            alt="Absolute Robotics media."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/outreach.png"
+            alt="Absolute Robotics outreach."
+          />
+          <img
+            class="lead-image"
+            src="assets/images/about-us/leads/finance.png"
+            alt="Absolute Robotics finance."
+          />
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Subteams</h2>
+        <div class="flex flex-col gap-8">
+          <div class="two-column">
+            <div class="paragraph">
+              <div class="subparagraph">
+                <h3 class="paragraph-title">Design</h3>
+                Design creates ideas to solve the problem given by FIRST
+                Robotics through brainstorming, CAD, and prototyping.
+              </div>
+              <div class="subparagraph">
+                <h3 class="paragraph-title">Mechanical</h3>
+                Mechanical prototypes, constructes, tests and refines the
+                physical mechanisms of the robot, as well as constructing arena
+                pieces for testing.
+              </div>
+            </div>
+            <img
+              class="image-beside-paragraph"
+              src="assets/images/about-us/showcase0.jpg"
+              alt="Absolute Robotics
+            design/mechanical."
+            />
+          </div>
+          <div class="two-column-reverse">
+            <img
+              class="image-beside-paragraph"
+              src="assets/images/about-us/showcase1.jpg"
+              alt="Absolute Robotics
+          design/mechanical."
+            />
+            <div class="paragraph">
+              <div class="subparagraph">
+                <h3 class="paragraph-title">Controls</h3>
+                Controls implements electronics, controls, and pneumatics
+                systems for the robot. This includes wiring the robot and
+                troubleshooting issues of the robot while also programming Java
+                to create teleoperated commands for the drivers, and autonomous
+                live updating systems for autonomous periods.
+              </div>
+            </div>
+          </div>
+          <div class="two-column">
+            <div class="paragraph">
+              <div class="subparagraph">
+                <h3 class="paragraph-title">Admin</h3>
+                Admin organizes team finances, advertises the team, and is in
+                charge of team media. Activities often include organizing
+                fundraisors, contacting sponsorships and mentors, and creating
+                posters.
+              </div>
+              <div class="subparagraph">
+                <h3 class="paragraph-title">Scouting</h3>
+                Scouting collects data during the competition for better
+                strategic analysis and planning for the team.
+              </div>
+            </div>
+            <img
+              class="image-beside-paragraph"
+              src="assets/images/about-us/showcase2.jpg"
+              alt="Absolute Robotics
+            design/mechanical."
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="socials">
+        <a
+          class="social fab fa-facebook"
+          href="https://facebook.com/frc4308"
+        ></a>
+        <a
+          class="social fab fa-twitter"
+          href="https://twitter.com/frcteam4308"
+        ></a>
+        <a
+          class="social fab fa-instagram"
+          href="https://instagram.com/frc4308"
+        ></a>
+        <a
+          class="social fab fa-youtube"
+          href="https://youtube.com/channel/UCFOy9P3ZDVzclLQF3w-mtsw"
+        ></a>
+        <a
+          class="social fas fa-envelope"
+          href="mailto:the.woodlands.robotics@gmail.com"
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
