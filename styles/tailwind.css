@@ -821,7 +821,7 @@ video {
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
   padding: 2rem;
 }
 
@@ -904,7 +904,7 @@ video {
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
   padding: 2rem;
 }
 
@@ -1127,7 +1127,7 @@ video {
   flex-direction: column;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
   padding: 2rem;
 }
 
