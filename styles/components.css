@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .base {
+  .site {
     @apply overflow-x-hidden w-screen font-sans text-gray-300 bg-gray-900;
   }
   .mobile-nav-bar {
