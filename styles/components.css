@@ -4,19 +4,16 @@
 
 @layer components {
   .site {
-    @apply overflow-x-hidden w-screen font-sans text-gray-900 bg-gray-300 dark:text-gray-300 dark:bg-gray-900;
+    @apply overflow-x-hidden w-screen font-sans text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-900;
   }
   .mobile-nav-bar {
     @apply flex fixed flex-col justify-center items-center p-4 w-full text-white bg-red-700 rounded-b-lg;
-  }
-  .nav-bar {
-    @apply fixed flex-row gap-4 justify-center items-center p-4 w-full text-white bg-red-700 rounded-b-lg;
   }
   .mobile-nav-buttons {
     @apply flex flex-col gap-4 justify-center items-center w-full max-h-0 transition-all duration-500 peer-checked:pt-4 peer-checked:max-h-screen;
   }
   .nav-buttons {
-    @apply flex flex-row gap-4 pt-0 ml-auto w-auto peer-checked:pt-0;
+    @apply flex-row pt-0 ml-auto w-auto peer-checked:pt-0;
   }
   .mobile-nav-button {
     @apply invisible p-2 w-0 text-center text-transparent whitespace-nowrap bg-red-600 rounded-lg transition-all duration-200 hover:bg-red-400;
@@ -25,7 +22,7 @@
     @apply visible w-full text-white;
   }
   .nav-button {
-    @apply visible w-auto text-center text-current text-white bg-red-600 rounded-lg transition-colors duration-200 hover:bg-red-400;
+    @apply visible w-auto text-white;
   }
   .main {
     @apply flex flex-col gap-32 justify-center items-center pb-16;
@@ -40,7 +37,7 @@
     @apply text-xl md:px-16 lg:px-32 xl:px-64;
   }
   .hero-title {
-    @apply text-6xl font-black text-red-700 md:text-8xl;
+    @apply text-6xl font-black text-red-500 md:text-8xl;
   }
   .hero-subtitle {
     @apply text-4xl font-extrabold text-red-600 dark:text-red-400;
@@ -70,7 +67,7 @@
     @apply gap-4 justify-center items-center card md:w-128;
   }
   .event-title {
-    @apply h-full text-2xl font-bold transition-colors hover:text-red-600 dark:hover:text-red-300 md:text-4xl;
+    @apply h-full text-2xl font-bold transition-colors hover:text-red-600 dark:hover:text-red-400 md:text-4xl;
   }
   .event-date {
     @apply text-lg font-medium text-gray-500 md:text-xl;
@@ -106,10 +103,10 @@
     @apply w-32 rounded-lg md:w-56;
   }
   .list-row {
-    @apply flex justify-center items-center p-4 w-full h-full;
+    @apply flex justify-center items-center p-4 w-full h-full bg-gray-200 dark:bg-gray-800;
   }
   .list-row:nth-child(even) {
-    @apply bg-gray-775;
+    @apply bg-gray-225 dark:bg-gray-775;
   }
   .sponsors {
     @apply flex flex-col flex-wrap gap-8 justify-center md:flex-row;
