@@ -37,7 +37,7 @@
     @apply text-xl md:px-16 lg:px-32 xl:px-64;
   }
   .hero-title {
-    @apply text-6xl font-black text-red-500 md:text-8xl;
+    @apply text-6xl font-black text-red-700 md:text-8xl;
   }
   .hero-subtitle {
     @apply text-4xl font-extrabold text-red-600 dark:text-red-400;
