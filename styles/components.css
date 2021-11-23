@@ -127,7 +127,7 @@
     @apply flex flex-row gap-4 justify-center items-center text-4xl;
   }
   .social {
-    @apply flex justify-center items-center w-8 h-8 text-xl bg-red-600 rounded-lg transition-colors duration-200 md:h-16 md:w-16 md:text-4xl hover:bg-red-400;
+    @apply flex justify-center items-center w-8 h-8 text-xl text-white bg-red-600 rounded-lg transition-colors duration-200 md:h-16 md:w-16 md:text-4xl hover:bg-red-400;
   }
 }
 
