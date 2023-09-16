@@ -4,7 +4,7 @@
 
 @layer components {
   .site {
-    @apply overflow-x-hidden w-screen font-sans text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-100;
+    @apply overflow-x-hidden w-screen font-sans text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-900;
   }
   .mobile-nav-bar {
     @apply flex fixed flex-col justify-center items-center p-4 w-full text-white bg-red-700 rounded-b-lg;
