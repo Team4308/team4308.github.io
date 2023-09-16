@@ -619,7 +619,7 @@ video {
 @media (prefers-color-scheme: dark) {
   .site {
     --tw-bg-opacity: 1;
-    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+    background-color: rgba(66, 66, 66, var(--tw-bg-opacity));
   }
 
   .site {
