@@ -619,7 +619,7 @@ video {
 @media (prefers-color-scheme: dark) {
   .site {
     --tw-bg-opacity: 1;
-    background-color: rgba(66, 66, 66, var(--tw-bg-opacity));
+    background-color: rgba(44, 44, 44, var(--tw-bg-opacity));
   }
 
   .site {
@@ -1378,7 +1378,7 @@ video {
 }
 
 .bg-sponsor-us {
-  background-image: linear-gradient(to top, rgba(243, 244, 246, 1), rgba(243, 244, 246, 0.5)), url('../assets/images/sponsor-us/hero1.JPG');
+  background-image: linear-gradient(to top, rgba(243, 244, 246, 1), rgba(243, 244, 246, 0.5)), url('../assets/images/sponsor-us/hero.JPG');
 }
 
 .bg-sponsors {
